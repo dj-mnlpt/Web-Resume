@@ -11,7 +11,7 @@ module.exports = {
         '9':'2.25rem'
       },
       
-      container: {
+      screens: {
         'xs':'425px',
       }
 
