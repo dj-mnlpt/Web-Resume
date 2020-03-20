@@ -8,7 +8,9 @@ module.exports = {
       },
       margin: {
         '7':'1.75rem',
+        '9':'2.25rem'
       },
+      
       container: {
         'xs':'425px',
       }
