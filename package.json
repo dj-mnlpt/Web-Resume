@@ -1,0 +1,23 @@
+{
+  "name": "Web-Resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dj-mnlpt/Web-Resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dj-mnlpt/Web-Resume/issues"
+  },
+  "homepage": "https://github.com/dj-mnlpt/Web-Resume#readme",
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  }
+}
