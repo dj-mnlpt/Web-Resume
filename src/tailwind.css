@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.margin5px {
+    margin-top: 5px;
+}

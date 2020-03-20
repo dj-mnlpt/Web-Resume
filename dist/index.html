@@ -4,11 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-    <main class=".box-border">
+    <body class="bg-green-700">
+        <div class="container mx-auto max-w-4xl">
+            <header class="flex mt-12">
+                <div class="">
+                    <h1 class="text-2xl font-bold uppercase text-white">Darwin Manlapat</h1>
+                    <span class="uppercase text-white">Front End Developer</span>
+                </div>
+
+            </header>
+            <main class=" mt-16">
+                <div class="bg-green-400 w-full sm:flex">
+                    <div class="">
+                        <img src="/img/darwin.jpg" alt="" class="h-88 ">
+                    </div>
+                    <div class="w-2/3">
+                        <div class="mx-12 mb-1">
+                            <!-- Personal Info -->
+                            <div id="personalInfo" class="accordion">
+                                <div class="mt-8 border-b-2 pb-3">
+                                    <h1 class="uppercase text-3xl font-bold mb-1 ">I'm Darwin Manlapat</h1>
+                                    <span class="uppercase">Front End Developer</span>
+            
+                                </div>
+                                <div class="botPersonalInfo flex">
+                                    <div>
+                                        <ul class="uppercase">
+                                            <li class="mt-3"><strong>Age</strong></li>
+                                            <li class="mt-3"><strong>Address</strong></li>
+                                            <li class="mt-3"><strong>Email</strong></li>
+                                            <li class="mt-3"><strong>Phone</strong></li>
+                                            <li class="mt-3"><strong>Website</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ml-8">
+                                        <ul class="uppercase">
+                                            <li class="mt-3">23</li>
+                                            <li class="mt-3">Central Bicutan, Taguig City</li>
+                                            <li class="mt-3">darwin.xpanse@gmail.com</li>
+                                            <li class="mt-3">+639953786010</li>
+                                            <li class="mt-3">xpanse.com.ph</li>
+                                        </ul>
+                                    </div>
+                                </div>  
+                            </div>
+                            <!-- Skills -->
+                            <div id="skills" class="hidden">
+                                <div class="competencies mt-8 border-b-2 pb-3">
+                                  <h1 class="uppercase text-3xl font-bold mb-1 ">Competencies</h1>
+                                </div>
+                                <div>
+                                    <ul class="">
+                                        <li class="mt-3 list-disc ml-4">Proficient in HTML5, CSS3, & JavaScript</li>
+                                        <li class="mt-3 list-disc ml-4">Knowledgeable in using CSS Frameworks & Extensions like Tailwind & SASS</li>
+                                        <li class="mt-3 list-disc ml-4">Knowledgeable in using Version Control System like Github</li>
+                                        <li class="mt-3 list-disc ml-4">Familiar with the concepts of JSON, AJAX, and DOM</li>
+                                        <li class="mt-3 list-disc ml-4">Ability to identify problems and determine timely solutions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Experience -->
+                            <div id="experience" class="hidden">
+                                <div class="competencies mt-8 border-b-2 pb-3">
+                                  <h1 class="uppercase text-3xl font-bold mb-1 ">Experience/s</h1>
+                                </div>
+                                <div class="xpList mt-5">
+                                    <div class="xp1 mb-3">
+                                        <h1><strong>Front End Web Developer (Intern)</strong> | Xpanse Technologies Inc.</h1>
+                                        <date class="text-sm">February 2020 - Present</date>
+                                    </div>
+                                    <div class="xp2 mb-3">
+                                        <h1><strong>Barista (Part-Time)</strong> | Starbucks Philippines</h1>
+                                        <date class="text-sm">May 2019 - October 2019</date>
+                                    </div>
+                                    <div class="xp3 mb-3">
+                                        <h1><strong>Technician (Intern)</strong> | Amkor Technology Philippines</h1>
+                                        <date class="text-sm">October 2014 - March 2015</date>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education-->
+                            <div id="education" class="hidden">
+                                <div class="competencies mt-8 border-b-2 pb-3">
+                                  <h1 class="uppercase text-3xl font-bold mb-1 ">Education</h1>
+                                </div>
+                                <div class="eduList mt-5">
+                                    <div class="xp1 mb-4">
+                                        <h1><strong>Computer Engineering Technology</strong> </h1>
+                                        <span>Technological University of the Philippines - Taguig</span><br>
+                                        <date class="text-sm">2018 - Present</date>
+                                    </div>
+                                    <div class="xp2 mb-4">
+                                        <h1><strong>Electronics Engineering Technology</strong></h1>
+                                        <span>Technological University of the Philippines - Taguig</span><br>
+                                        <date class="text-sm">2012 - 2015</date>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="margin5px">
+                            <nav>
+                                <ul class="flex justify-around">
+                                    <a href="#personalInfo" class="" ><li><img src="/img/personal-information-icon.png" alt="" class="h-12"></li></a>
+                                    <a href="#skills"><li><img src="/img/web-skill.png" alt="" class="h-12"></li></a>
+                                    <a href="#experience" ><li><img src="/img/experience_icon.png" alt="" class="h-12"></li></a>
+                                    <a href="#education"><li><img src="/img/education.png" alt="" class="h-12"></li></a>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </main>
         
-    </main>
-    
-</body>
+
+            <footer></footer>
+
+            <script>
+            let personalInfo = document.querySelector("#personalInfo")
+            let skills = document.querySelector("#skills")
+            let experience = document.querySelector("#experience")
+            let education = document.querySelector("#education")
+
+            personalInfo.addEventListener("click", function(){
+                var e = document.getElementById(id);
+                    if(e.style.display == 'block')
+                        e.style.display = 'none';
+                    else
+                        e.style.display = 'block';
+            });
+            </script>
+        </div>
+    </body>
 </html>
