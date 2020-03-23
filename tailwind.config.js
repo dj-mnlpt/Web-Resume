@@ -8,11 +8,13 @@ module.exports = {
       },
       margin: {
         '7':'1.75rem',
-        '9':'2.25rem'
+        '9':'2.25rem',
       },
       
       screens: {
-        'xs':'425px',
+        'xsEmail':{'max':'476px'},
+        'xsPhone':{'max':'431px'},
+        'md':'794px'
       }
 
     },
